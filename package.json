@@ -1,0 +1,21 @@
+{
+  "name": "assign3-css-precompiler_applerustria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serverinaction": "lite-server --baseDir=\"public\"",
+    "appleassign3":"sass --watch src/scss:public/assets/css",
+    "start":"concurrently \"npm run appleassign3\" \"npm run serverinaction\""
+
+  },
+  "keywords": [],
+  "author": "Apple Rustria",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "lite-server": "^2.6.1",
+    "sass": "^1.77.5"
+  }
+}
